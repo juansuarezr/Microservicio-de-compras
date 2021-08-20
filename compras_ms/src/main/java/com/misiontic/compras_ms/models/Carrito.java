@@ -1,20 +1,41 @@
 package com.misiontic.compras_ms.models;
 
+import java.util.ArrayList;
 import java.util.Map;
 
 public class Carrito {
 
-    private Map<String, Integer> dictCarrito;
+    private String productId;
+    private Integer cantidad;
+    private Float valorUnidad;
 
-    public Carrito(Map<String, Integer> dictCarrito) {
-        this.dictCarrito = dictCarrito;
+    public Carrito(String productId, Integer cantidad, Float valorUnidad) {
+        this.productId = productId;
+        this.cantidad = cantidad;
+        this.valorUnidad = valorUnidad;
     }
 
-    public Map<String, Integer> getDictCarrito() {
-        return dictCarrito;
+    public String getProductId() {
+        return productId;
     }
 
-    public void setDictCarrito(Map<String, Integer> dictCarrito) {
-        this.dictCarrito = dictCarrito;
+    public void setProductId(String productId) {
+        this.productId = productId;
+    }
+
+    public Integer getCantidad() {
+        return cantidad;
+    }
+
+    public void setCantidad(Integer cantidad) {
+        this.cantidad = cantidad;
+    }
+
+    public Float getValorUnidad() {
+        return valorUnidad;
+    }
+
+    public void setValorUnidad(Float valorUnidad) {
+        this.valorUnidad = valorUnidad;
     }
 }
