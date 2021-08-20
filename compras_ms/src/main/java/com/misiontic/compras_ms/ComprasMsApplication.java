@@ -18,6 +18,6 @@ public class ComprasMsApplication {
 
 	@GetMapping
 	public String hello() {
-		return "Hello World";
+		return "Microservicio de compras";
 	}
 }
